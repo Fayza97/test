@@ -18,7 +18,7 @@ $(function () {
                             <td><input type="text" class="comment" value="' + el.comment + '"></td>\
                             <td>\
                             <button id="update-button" class="btn btn-warning">Edit</button>\
-                            <button id="delete-button" class="btn btn-danager">Delete</i></button>\
+                            <button id="delete-button" class="btn btn-danger">Delete</i></button>\
                             </td>\
                         </tr>\
                     ');
