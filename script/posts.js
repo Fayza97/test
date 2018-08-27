@@ -1,53 +1,3 @@
-// (function () {
-//     const url = "http://localhost:3000/posts";
-//     //'https://jsonplaceholder.typicode.com/posts';
-//     $.ajax({
-//         // url:'db.json',
-//         //     dataType: 'json',
-//         url: url,
-//         method: "GET",
-//         success: (result, req) => {
-//             const tbody = $("table tbody");
-
-//             result.forEach((el, i) => {
-//                 const tr = $("<tr>").append([
-//                     $("<td>").html(el.id),
-//                     $("<td>").html(el.title),
-//                     $("<td>").html(el.body),
-//                     // $("<td>").html(
-//                     //     $('<button class="btn btn-flat waves-effect btn-outline-warning">')
-//                     //     .html("Edit")
-//                     //     .on("click", () => {
-//                     //         $(window).scrollTop(0);
-//                     //         $("#updateBtn").show(450);
-//                     //         $(".addUser").show(450);
-//                     //         $("#submitBtn").hide(150);
-//                     //         $(".hideShowBtn").show(450);
-
-//                     //         $("#id").val(el.id);
-//                     //         $("#userId").val(el.userId);
-//                     //         $("#categoryId").val(el.categoryId);
-//                     //         $("#title").val(el.title);
-//                     //         $("#body").val(el.body);
-//                     //     })
-//                     // ),
-//                     // $("<td>").html(
-//                     //     $('<button class="btn btn-flat waves-effect btn-outline-danger">')
-//                     //     .html("Delete")
-//                     //     .on("click", () => {
-//                     //         $("#updateBtn").hide(150);
-//                     //         $(".addUser").hide(450);
-//                     //         $(".hideShowBtn").show(150);
-//                     //         return deleteFunc();
-//                     //     })
-//                     // )
-//                 ]);
-
-//                 tbody.append(tr);
-//             });
-//         }
-//     });
-// })();
 $(function () {
     // GET/READ
     // $('#sub-button').on('click', );
@@ -83,7 +33,7 @@ $(function () {
         });
     };
     // CREATE/POST
-    $('.form-inline').on('submit', function (event) {
+    $('.form').on('submit', function (event) {
         event.preventDefault();
 
         let ID = $('#id');

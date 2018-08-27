@@ -27,7 +27,7 @@ $(function () {
         });
     };
     // CREATE/POST
-    $('.form-inline').on('submit', function (event) {
+    $('.form').on('submit', function (event) {
         event.preventDefault();
 
         let comment = $('#comment');
